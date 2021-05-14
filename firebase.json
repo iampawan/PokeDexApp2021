@@ -1,0 +1,28 @@
+{
+  "hosting": {
+    "public": "build/web",
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          },
+          {
+            "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+            "headers": [ {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            } ]
+          }
+        ]
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
